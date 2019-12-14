@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="">
+    <title>KURT LOGAN'S CYBER SPACE PLACE</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="/css/site.css?id=c159a414222f916a7e5a">
+</head>
+<body class="relative min-h-screen pb-8">
+    <div id="site">
+        <nav class="mb-6 flex justify-center mx-auto">
+                            <a class="mx-4 " href="/">Home</a>
+                            <a class="mx-4 text-green" href="/diary">On-Line Diary</a>
+                            <a class="mx-4 " href="/swap">Swap List</a>
+                            <a class="mx-4 " href="/contact">Contact Me</a>
+            
+        </nav>
+        <div class="container max-w-lg mx-auto">
+            <header>
+    <div class="text-xs uppercase font-headline text-yellow text-center mb-2">
+        ==== March 9th, 1988 ====
+    </div>
+    <h1 class="text-center uppercase">99 Bottles of BASIC Beer</h1>
+    <div class="text-center mb-3 -mt-3">
+                    <a href="/diary/tags/programming">programming</a>
+        
+    </div>
+</header>
+
+<article class="content mb-6">
+                        <p>Here&#039;s how to make the song 99 Bottles of Beer in BASIC. Written on my 64.</p>
+                                <pre class="code-block"><code>10 FOR B=99 TO 1 STEP -1
+20 GOSUB 100
+30 T$=T$+" OF BEER ON THE WALL"
+40 PRINT T$;", ";T$
+50 PRINT "TAKE ONE DOWN AND PASS IT AROUND, "
+60 IF B-1<=0 THEN PRINT "NO MORE BOTTLES OF BEER ON THE WALL":GOTO 80
+70 GOSUB 200:PRINT " OF BEER ON THE WALL"
+80 PRINT:NEXT
+91 PRINT "GO TO THE STORE AND BUY SOME MORE, 99 BOTTLES OF BEER ON THE WALL"
+92 END
+100 T$=STR$(B)+" BOTTLE":IF B>1 THEN T$=T$+"S"
+110 RETURN
+200 A=B-1:PRINT STR$(A)+" BOTTLE";
+210 IF A>1 THEN PRINT "S";
+220 RETURN
+</code></pre>
+                                <p>And there you have it.</p>
+            
+</article>
+        </div>
+        <form action="/search" class="absolute pin-b pin-l pin-r bg-black py-1 w-full flex justify-center align-center mt-8">
+            <div class="w-full max-w-lg mx-auto flex items-center">
+                <input type="search" class="bg-white flex-1 uppercase w-full p-1" name="q" placeholder="Enter Search Query">
+                <button type="submit" class="p-1 bg-yellow border-l hover:bg-green">EXECUTE</button>
+            </div>
+        </form>
+    </div>
+    <script src="/js/site.js?id=abcc556e77e89d30c4a3"></script>
+</body>
+</html>
